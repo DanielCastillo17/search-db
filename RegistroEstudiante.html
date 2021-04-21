@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action= "./RegistroEstudiante.php" method="POST">
+        <label for="nombre">
+            <span>Nombre</span>
+            <input type="text" id="nombre" placeholder="Escribe aca tu nombre">
+        </label>
+        <br>
+        <br>
+        <label for="apellido">
+            <span>Apellido</span>
+            <input type="text" id="apellido" placeholder="Escribe aca tus apellidos">
+        </label>
+        <br>
+        <br>
+        <label for="genero">
+            <span>Genero</span>
+            <input type="radio" value="1" name="genero"> Hombre
+            <input type="radio" value="0" name="genero"> Mujer
+        </label>
+        <br>
+        <br>
+        <span>Estrato</span> 
+        <input list="Estrato">
+        <datalist id="Estrato">
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+            <option value="6"></option>
+        </datalist>
+        <br>
+        <br>
+        <label for="codigo">
+            <span>Codigo</span>
+            <input type="text" id="codigo" placeholder="Escribe aca tu codigo">
+        </label>
+        <br>
+        <br>
+        <span>Materias</span> 
+        <input list="Materias">
+        <datalist id="Materias">
+            <option value="Bases de datos"></option>
+            <option value="Microcontroladores"></option>
+            <option value="Matematicas"></option>
+            <option value="Infoetica"></option>
+            <option value="Programacion"></option>
+            <option value="Ingles"></option>
+        </datalist>
+        <br>
+        <br>
+    </form>
+    <a href="Index.html">
+        <input type="submit" value="INICIO">
+    </a>
+    <input type="submit" value="GUARDAR">
+</body>
+</html>
